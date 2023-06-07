@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Filter Colorizer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>CSS Filter Colorizer</h1>
+    <hr />
+    <label>Target Color</label>
+    <input type="text" id="targetColorHex" maxlength="6" minlength="3" />
+    <label
+      >Quality (Higher requires time and specs.):
+      <span id="qualityVal">7.00</span></label
+    >
+    <input
+      type="range"
+      id="quality"
+      min="0.01"
+      max="14.98"
+      step="0.01"
+      value="7.00"
+      oninput="qualityDisplay()"
+    />
+    <button onclick="generate()">Generate</button>
+    <hr />
+    <h2>Result</h2>
+    <div id="previews">
+      <label>Target Color Preview</label>
+      <div id="targetColorPreview"></div>
+      <label>Filter Preview</label>
+      <div id="resultColorPreview"></div>
+    </div>
+    <pre><code id="result"></code></pre>
+    <p>Loss: <span id="loss"></span></p>
+    <p>Tryed <span id="tryTime"></span> times.</p>
+  </body>
+</html>
