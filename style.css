@@ -15,4 +15,7 @@
 }
 #previews > div#resultColorPreview {
   background-color: #000;
+}
+#previews > div#resultColorPreview > label {
+  filter: invert(1);
 }/*# sourceMappingURL=style.css.map */

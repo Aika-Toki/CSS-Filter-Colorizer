@@ -13,6 +13,9 @@
     }
     &#resultColorPreview {
       background-color: #000;
+      & > label {
+        filter: invert(1);
+      }
     }
   }
 }

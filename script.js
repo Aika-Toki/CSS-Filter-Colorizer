@@ -338,6 +338,8 @@ function generate() {
 
     document.querySelector("#targetColorPreview").style.backgroundColor =
       color.toString();
+    document.querySelector("#targetColorPreview>label").style.color =
+      color.toString();
     document
       .querySelector("#resultColorPreview")
       .setAttribute("style", result.filter);
