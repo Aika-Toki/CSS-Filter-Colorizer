@@ -314,7 +314,7 @@ function generate() {
     alert("Invalid format!");
     return;
   }
-  document.querySelector("#result").textContent = "Processing.";
+  document.querySelector("#result").textContent = "Processing...";
   setTimeout(() => {
     let quality = 15.01 - Number(document.querySelector("#quality").value);
     const color = new Color(rgb[0], rgb[1], rgb[2]);
@@ -345,7 +345,7 @@ function generate() {
     document.querySelector("#loss").textContent = result.loss.toFixed(2);
     document.querySelector("#tryTime").textContent = tryTime;
     // $(".lossDetail").html(`Loss: ${result.loss.toFixed(1)}. <b>${lossMsg}</b>`);
-  }, 10);
+  }, 100);
 }
 function qualityDisplay() {
   document.querySelector("#qualityVal").textContent = Number(
