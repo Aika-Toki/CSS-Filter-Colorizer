@@ -14,7 +14,7 @@
     &#resultColorPreview {
       background-color: #000;
       & > label {
-        filter: invert(1);
+        filter: hue-rotate(180deg) brightness(10);
       }
     }
   }

@@ -17,5 +17,5 @@
   background-color: #000;
 }
 #previews > div#resultColorPreview > label {
-  filter: invert(1);
+  filter: hue-rotate(180deg) brightness(10);
 }/*# sourceMappingURL=style.css.map */
