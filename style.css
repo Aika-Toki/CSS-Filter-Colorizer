@@ -1,10 +1,17 @@
 #previews {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 #previews > div {
-  width: 80px;
+  width: 50%;
   height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#previews > div > label {
+  color: #fff;
+  filter: drop-shadow(2px 2px 4px #000);
 }
 #previews > div#resultColorPreview {
   background-color: #000;

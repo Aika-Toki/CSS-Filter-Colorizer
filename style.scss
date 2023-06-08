@@ -1,9 +1,16 @@
 #previews {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   & > div {
-    width: 80px;
+    width: 50%;
     height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > label {
+      color: #fff;
+      filter: drop-shadow(2px 2px 4px #000);
+    }
     &#resultColorPreview {
       background-color: #000;
     }
