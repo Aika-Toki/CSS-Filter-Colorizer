@@ -321,7 +321,7 @@ function generate() {
     const solver = new Solver(color);
     let tryTime = 1;
     let result = solver.solve();
-    while (result.loss > quality) {
+    while (result.loss > quality && tryTime < 50000) {
       result = solver.solve();
       tryTime++;
     }
